@@ -42,7 +42,7 @@ stages{
 	stage('DeployAppIntoTomcatServer'){
 	steps{
 	sshagent(['a2b944b0-d466-4676-8997-3658e2ab4fca']) {
-	 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.213.0.19:/opt/apache-tomcat-9.0.41/webapps/"
+	 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.109.213.110:/opt/apache-tomcat-9.0.41/webapps/"
 	}
 	}
 	}
@@ -55,8 +55,8 @@ stages{
 	    mail body: '''Build Over!.. Success
 
 Regards,
-Mithun Technologies,
-9980923226''', subject: 'Build Over...Successfull', to: 'devopstrainingblr@gmail.com'
+vineetha lingutla
+9885843441''', subject: 'Build Over...Successfull', to: 'vineetha.lingutla@gmail.com'
 	  }
 	  
 	  failure{
@@ -64,8 +64,8 @@ Mithun Technologies,
 	  	    mail body: '''Build Over!.. Failed
 
 	  Regards,
-	  Mithun Technologies,
-	  9980923226''', subject: 'Build Over...Failed', to: 'devopstrainingblr@gmail.com'
+	  vineetha lingutla,
+	  9885843441''', subject: 'Build Over...Failed', to: 'vineetha.lingutla@gmail.com'
 	  }
 	  
 	  
