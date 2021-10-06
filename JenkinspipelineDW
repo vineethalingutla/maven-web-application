@@ -4,7 +4,7 @@ agent any;
 
 tools{
 
-maven 'maven3.6.3'
+maven 'maven3.6.2'
 
 }
 
@@ -17,7 +17,7 @@ stages{
 
     stage('CheckOutCode'){
 	 steps{
-	   git branch: 'development', credentialsId: '347c3760-8e63-4289-9fe9-0a03f8442491', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+	   git branch: 'development', credentialsId: '347c3760-8e63-4289-9fe9-0a03f8442491', url: 'https://github.com/vineethalingutla/maven-web-application.git'
 	 }
 	}
 	
