@@ -101,13 +101,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>wallmart releases Repository</name>
-	      <url>http://65.0.101.187:8081/repository/wallmart-releases/</url>
+	      <url>http://13.233.132.255:9980/vineethalingutla/repository/wallmart-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>wallmart snapshot Repository </name>
-	      <url>http://65.0.101.187:8081/repository/wallmart-snapshot/</url>
+	      <url>http://13.233.132.255:9980/vineethalingutla/repository/wallmart-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
