@@ -35,7 +35,7 @@ stages{
 	
 	stage('UploadArtifactsIntoNexus'){
 	steps{
-	sh "mvn nexus"
+	sh "mvn deploy"
 	}
 	}
 	
